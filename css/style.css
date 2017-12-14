@@ -147,7 +147,7 @@ span.fa {
 
 .item > img.index-carouselimg {
 	height: 100vh;
-	width: auto;
+	width: 200vh;
 	object-position: center;
 	max-width: 200%;
 	max-height: 200%;
