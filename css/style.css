@@ -1,0 +1,407 @@
+/**********   css  reset   **********/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Nunito Sans', sans-serif;
+	color: #DDFFEB;
+}
+
+/*  site palette/fonts
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Raleway', sans-serif; big font
+
+#0E3B43 - dark  footer
+#B0413E - red   body
+#357266 - teal  well 
+#DDFFEB - light font
+
+*/
+
+/**********  clear   **********/
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+/**********   general/mobile   **********/
+
+body {
+	background: url(../img/bg-wood.jpg);
+	background-color: #B0413E;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+/**********   buttons   **********/
+
+.btn {
+	background-color: #B0413E;
+	border: 2px dotted #0E3B43;
+	color: #DDFFEB;
+}
+
+
+/**********   adjust to nav height   **********/
+body.nav-adjust {
+	margin-top: 50px;
+} 
+
+
+/**********  navbar   **********/
+.navbar-inverse,
+.navbar-inverse .navbar-nav > .active > a {
+	background-color: #B0413E;
+}
+
+button.navbar-toggle {
+	background-color: #357266;
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > li > a, 
+.navbar-inverse .navbar-header {
+	color: #DDFFEB;
+}
+
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+	background-color: #0E3B43;
+}
+
+
+
+/**********  footer   **********/
+
+footer {
+	min-height: 20vh;
+	background-color: #0E3B43;
+	border-top: 2px dotted #DDFFEB;
+	padding: 3vh;
+}
+
+footer > p {
+	text-align: left;
+	margin-bottom: 0;
+}
+
+.footer-column1 {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.footer-column1 > img {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin-left: 5vw;
+}
+.footer-column2 > a {
+	color: #DDFFEB;
+	text-decoration: none;
+	font-size: .9em;
+	display: block;
+}
+
+.footer-column3 {
+	font-size: 2em;
+	text-align: center;
+}
+
+.footer-column3 > h3 {
+	margin-top: 0;
+}
+
+span.fa {
+	padding: 5px;
+}
+
+.disclaimer {
+	
+}
+
+
+/**********   index css   **********/
+
+.item > img.index-carouselimg {
+	height: 100vh;
+	width: auto;
+	object-position: center;
+	max-width: 200%;
+	max-height: 200%;
+}
+
+
+.carousel-caption > a {
+	padding: 3vw 10vw;
+	font-size: 1em;
+	color: #DDFFEB;
+}
+
+.carousel-caption > .btn-landing {
+	border-radius: 0;
+	background-color: transparent;
+	border: 1px solid #DDFFEB;
+	margin-bottom: 3vw;
+}
+
+/**********   home css   **********/
+
+.home-topwell {
+	background-color: #B0413E;
+	margin: 0 auto;
+	margin-top: 10vh;
+	padding: 10px;
+	border: 2px dotted #0E3B43;
+}
+
+.home-topwell > h1 {
+	text-align: center;
+	font-size: 3em;
+	font-weight: bolder;
+	font-family: 'Raleway', sans-serif;
+}
+
+.home-well {
+	background-color: #357266;
+	border: 2px dotted #0E3B43;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 10vh;
+	padding: 10px;
+}
+
+.home-wellimg {
+	overflow: hidden;
+	height: 30vh;
+	border: 2px dotted #0E3B43;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.home-wellrow {
+	align-content: center;
+}
+
+.home-section {
+	margin-top: 10px;
+}
+
+.home-section > p {
+	padding: 1vh;
+	margin-bottom: 0;
+}
+
+.carousel-inner > .home-item {
+	overflow: hidden;
+	height: 50vh;
+}
+
+
+/**********   about css   **********/
+
+.about-well {
+	background-color: #357266;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+	padding: 10px;
+	border: 2px dotted #0E3B43;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-wellimg {
+	overflow: hidden;
+	height: 30vh;
+	border: 2px dotted #0E3B43;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-wellrow {
+	align-content: center;
+}
+
+.about-section {
+	margin-top: 10px;
+}
+
+.about-section > h2 {
+	text-align: center;
+	font-size: 2em;
+	font-weight: bolder;
+	font-family: 'Raleway', sans-serif;
+	margin-bottom: 5vh;
+}
+
+.about-section > p {
+	text-align: center;
+	margin: 3vh 0 10vh 0;
+}
+
+
+/**********    menu css   **********/
+
+.menu-topwell {
+	background-color: #B0413E;
+	margin: 0 auto;
+	margin-top: 10vh;
+	padding: 10px;
+	border: 2px dotted #0E3B43;
+}
+
+.menu-topwell > h2 {
+	text-align: center;
+	font-size: 3em;
+	font-weight: bolder;
+	font-family: 'Raleway', sans-serif;
+}
+
+.menu-well {
+	background-color: #357266;
+	margin: 0 auto;
+	padding: 10px;
+	border: 2px dotted #0E3B43;
+	margin-bottom: 10vh;
+}
+
+.menu-wellimg {
+	overflow: hidden;
+	height: 20vh;
+	border: 2px dotted #0E3B43;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu-wellimg img {
+}
+
+.menu-wellrow {
+	align-content: center;
+}
+
+.menu-section {
+	margin: 10px 0;
+}
+
+.menu-section > h2 {
+	text-align: center;
+	font-size: 2em;
+	font-weight: bolder;
+	font-family: 'Raleway', sans-serif;
+}
+
+.menu-item {
+	margin: 10px 0;
+}
+
+.menu-foodname {
+	font-weight: bold;
+	border-bottom: dotted;
+	padding: 0;
+}
+
+.menu-foodprice {
+	font-weight: bold;
+	text-align: center;
+	padding: 0;
+}
+
+.menu-description {
+	font-style: italic;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	padding: 0;
+	text-align: justify;
+}
+
+
+/**********   order online css   **********/
+
+.order-topwell {
+	background-color: #B0413E;
+	margin: 0 auto;
+	margin-top: 10vh;
+	padding: 10px;
+	border: 2px dotted #0E3B43;
+}
+
+.order-topwell > h2 {
+	text-align: center;
+	font-size: 3em;
+	font-weight: bolder;
+	font-family: 'Raleway', sans-serif;
+}
+
+.order-well {
+	background-color: #357266;
+	border: 2px dotted #0E3B43;
+	margin-bottom: 10vh;
+}
+
+.order-well> h2 {
+	text-align: center;
+	font-size: 2em;
+	font-weight: bolder;
+	font-family: 'Raleway', sans-serif;
+	margin-bottom: 5vh;
+}
+
+.order-well label {
+	margin-top: 5px;
+}
+
+.order-wellrow {
+	/*align-content: center;*/
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.order-wellrow > [class*='col-'] {
+	display: flex;
+	flex-direction: column;
+}
+
+.order-dropdown {
+	border: 2px dotted #0E3B43;
+	background-color: #B0413E;
+}
+
+/***    modal   ***/
+.modal-header {
+	border: 2px dotted #0E3B43;
+	background-color: #B0413E;
+}
+
+.modal-body, 
+.modal-footer {
+	border: 2px dotted #0E3B43;
+	background-color: #357266;
+}
+
+
+
+/**********   media queries   **********/
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+}
+
+/*** desktop ***/
+@media only screen and (min-width: 961px) {
+
+
+}
+}
+
+
+
+

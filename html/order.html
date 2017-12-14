@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<title>JPL Pizza | Order Online</title>
+
+	<!--    imports bootstrap    -->
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+
+	<!--    imports custom stylesheets    -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+	<!--    custom fonts    -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Raleway:900" rel="stylesheet">
+
+</head>
+<body class="nav-adjust">
+
+	<!--    Navbar    -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle btn" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+				</button>
+				<a class="navbar-brand" href="../index.html">JPL's Pizza</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active" ><a href="home.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="menu.html">Menu</a></li> 
+					<li><a href="order.html">Order Online</a></li> 
+				</ul>
+			</div>
+		</div>
+	</nav>   <!--    Navbar    -->
+
+	<div class="container-fluid">
+		<div class="row order-wellrow">
+			<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 order-topwell well">
+				<h2>Order Online!</h2>
+			</div>  
+		</div> 
+
+		<div class="row order-wellrow">
+			<div class="col-sm-1 col-md-8 col-lg-1"></div>
+			<div class="col-xs-12 col-sm-6 col-md-8 col-lg-6 well order-well">
+				<h2>Menu</h2>
+				<!--    pizza dropdown    -->
+				<label for="pizzaOrder">Choose Your Pizza:</label>
+				<select name="pizzaOrder" class="order-dropdown" id="optionpizza" onchange="">
+					<option value="0" selected>Select Pizza:</option>
+					<option value="500">Neapolitan</option>
+					<option value="550">Greek</option>
+					<option value="600">Mushroom Truffle</option>
+					<option value="500">Eggplant Parmesan</option>
+					<option value="525">Hawaiian</option>
+					<option value="575">Sicilian Pepperoni</option>
+					<option value="500">Pepperoni</option>
+					<option value="575">Manhattan</option>
+					<option value="550">Pesto Chicken</option>
+					<option value="600">Philly Cheese Steak</option>
+					<option value="525">All Meat</option>
+					<option value="600">Roasted Garlic</option>
+					<option value="600">Monaco</option>
+					<option value="575">Cheese Puddle</option>
+				</select>
+
+				<!--    pasta dropdown    -->
+				<label for="pastaOrder">Choose Your Pasta</label>
+				<select name="pastaOrder" class="order-dropdown" id="optionpasta" onchange="">
+					<option value="0" selected>Select Pasta:</option>
+					<option value="250">Pomodoro</option>
+					<option value="225">Pesto</option>
+					<option value="250">Carbonara</option>
+					<option value="250">Spaghetti and Meatballs</option>
+					<option value="300">Spaghetti Bolognese</option>
+					<option value="275">Fettucine Puttanesca</option>
+					<option value="300">Boscaiola</option>
+					<option value="275">Romana</option>
+					<option value="250">Stella</option>
+					<option value="225">Spinach</option>
+					<option value="250">Spirali Calabrese</option>
+					<option value="325">Positano</option>
+				</select>
+
+				<!--    salad dropdown    -->
+				<label for="saladOrder">Choose Your Salad:</label>
+				<select name="saladOrder" class="order-dropdown" id="optionsalad" onchange="">
+					<option value="0" selected>Select Salad:</option>
+					<option value="100">Caesar</option>
+					<option value="125">Greek</option>
+					<option value="100">Garden</option>
+					<option value="125">Chop Chop</option>
+					<option value="150">Italian Salami</option>
+					<option value="100">Navona</option>
+					<option value="125">Chicken</option>
+					<option value="150">Avocado and Asparagus</option>
+					<option value="175">Ravioli</option>
+					<option value="125">Green</option>
+					<option value="175">Mean Green</option>
+				</select>
+
+				<!--    drinks dropdown    -->
+				<label for="drinksOrder">Choose Your Drinks:</label>
+				<select name="drinksOrder" class="order-dropdown" id="optionpizza" onchange="">
+					<option value="0" selected>Select Drinks:</option>
+					<option value="40">Beer</option>
+					<option value="40">Iced Tea</option>
+					<option value="40">Lemonade</option>
+					<option value="30">Bottled Water</option>
+					<option value="40">Softdrinks</option>
+					<option value="75">Milkshake</option>
+				</select>
+			</div>
+				
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 well order-well">
+				<h2>Total</h2>
+				<!-- Trigger the modal with a button -->
+				<button type="button" class="btn btn-xs" data-toggle="modal" data-target="#myModal">Checkout</button>
+
+				<!-- Modal -->
+				<div id="myModal" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Thank you!</h4>
+							</div>
+
+							<div class="modal-body">
+								<p>Your order has been received. Expect a call from us within the next few minutes to confirm your address. Thank you for ordering!</p>
+							</div>
+							
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				      		</div>
+				    	</div>
+					</div>
+				</div>
+			</div>   <!--    .order-well    -->
+		</div>   <!--    .order-wellrow    -->
+	</div>
+
+	<footer class="container-fluid">
+		<div class="row">
+			<div class="col-xs-7 col-sm-4 col-md-4 col-lg-4 footer-column1">
+				<img src="../img/logo.png" class="img-responsive">
+  			</div>
+			<div class="col-xs-5 col-sm-2 col-md-4 col-lg-4 footer-column2">
+				<a href="../index.html"><u>JPL's Pizza</u></a>
+				<a href="home.html"><u>Home</u></a>
+				<a href="about.html"><u>About Us</u></a>
+				<a href="menu.html"><u>Menu</u></a> 
+				<a href="order.html"><u>Order Online</u></a>
+				<a href="disclaimer.html"><u>Disclaimer</u></a>
+  			</div>
+  			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 footer-column3">
+				<h3>Follow us on Social Media!</h3>
+				<a class="btn-social-icon btn-facebook">	
+					<span class="fa fa-facebook"></span>
+				</a>
+				<a class="btn-social-icon btn-twitter">
+					<span class="fa fa-twitter"></span>
+				</a>
+				<a class="btn-social-icon btn-instagram">
+					<span class="fa fa-instagram"></span>
+				</a>
+				<a class="btn-social-icon btn-pinterest">
+					<span class="fa fa-pinterest"></span>
+				</a>
+  			</div>
+  		</div>
+  		
+	</footer>
+
+	<!--    import fontawesome	 -->
+	<script src="https://use.fontawesome.com/1596618360.js"></script>
+	
+	<!--    import custom javascript -->
+	<script type="text/javascript" src="../js/script.js"></script>
+
+	<!--   import jQuery   -->
+	<script src="../js/jquery-3.2.1.min.js"></script>
+
+	<!--    import bootstrap javascript   -->
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
